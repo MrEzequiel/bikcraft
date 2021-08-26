@@ -1,0 +1,15 @@
+:root {
+  font-size: 63.5%;
+}
+
+body {
+  font: 400 1.6rem 'Rubik', sans-serif;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+
+  display: grid;
+}

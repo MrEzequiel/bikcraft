@@ -1,15 +1,275 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 :root {
   font-size: 63.5%;
+
+  /* COLORS */
+  --primary-color: #fec63e;
+  --secondary-color: #000;
 }
 
 body {
+  scroll-behavior: smooth;
   font: 400 1.6rem 'Rubik', sans-serif;
 }
 
-.container {
-  width: 960px;
-  margin: 0 auto;
-  position: relative;
+p {
+  font-family: 'Bitter', serif;
+}
 
-  display: grid;
+img {
+  display: block;
+}
+
+#header {
+  position: sticky;
+  z-index: 99;
+  top: 0;
+
+  width: 100%;
+  padding: 1.5rem 0;
+
+  background: var(--primary-color);
+}
+
+#header .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 6.6rem;
+}
+
+.navigation ul li {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+.navigation ul li:first-child {
+  margin-left: 0;
+}
+
+.navigation ul li a {
+  position: relative;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  font-size: 1.4rem;
+
+  transition: color 300ms;
+}
+
+.navigation ul li a:hover {
+  color: rgb(78, 78, 78);
+}
+.navigation ul li a::before {
+  content: '';
+  background: #000;
+  bottom: -0.75rem;
+  position: absolute;
+  width: 0px;
+  height: 0.25rem;
+
+  transition: width 400ms;
+}
+.navigation ul li a:hover::before {
+  width: 100%;
+}
+
+.button {
+  text-transform: uppercase;
+  width: 14rem;
+  height: 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--primary-color);
+
+  border: 0.4rem solid var(--primary-color);
+
+  transition: border 400ms, color 400ms, transform 600ms;
+}
+
+.button:hover {
+  border-color: #000;
+  color: #000;
+  transform: translateY(-0.5rem);
+}
+
+.button.other-button:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  letter-spacing: 0.1rem;
+  color: #000;
+  text-align: center;
+}
+
+.subtitle::after {
+  content: '';
+  display: block;
+  background: #000;
+  width: 6rem;
+  height: 0.3rem;
+
+  margin: 0.8rem auto 0;
+
+  transition: width 300ms ease;
+}
+
+.subtitle:hover::after {
+  width: 8rem;
+}
+
+.quote {
+  max-width: 30rem;
+  margin: 0 auto 3rem auto;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.quote p::after,
+.quote p::before {
+  content: '';
+  display: block;
+  background: #000;
+  width: 6rem;
+  height: 0.3rem;
+}
+
+.quote p::before {
+  margin: 2rem auto 1rem auto;
+}
+
+.quote p::after {
+  margin: 1rem auto 2rem auto;
+}
+
+.quote cite {
+  font-size: 1.4rem;
+  letter-spacing: 0.15rem;
+  font-style: normal;
+  font-weight: bold;
+}
+
+#break-quote {
+  width: 100%;
+  height: 20rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: url('../../assets/quote-img.jpg') no-repeat center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+#break-quote p,
+#break-quote cite {
+  text-shadow: 0 0 0.5rem black;
+}
+
+#break-quote p::before,
+#break-quote p::after {
+  background: #fff;
+}
+
+#footer .footer {
+  width: 100%;
+  background: #000;
+  color: #fff;
+
+  padding: 2rem 0;
+}
+
+.footer h3 {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: var(--primary-color);
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.footer h3::after {
+  content: '';
+  display: block;
+  background: var(--primary-color);
+  width: 6rem;
+  height: 0.3rem;
+
+  margin: 1rem 0 1.5rem;
+}
+
+.footer-story p {
+  line-height: 2.5rem;
+  padding-right: 4rem;
+}
+
+.footer-contact ul li {
+  font-family: 'Bitter', serif;
+  margin-bottom: 0.625rem;
+}
+.footer-contact ul li:last-child {
+  margin: 0;
+}
+
+#footer .copy {
+  width: 100%;
+  height: 5rem;
+
+  display: flex;
+  align-items: center;
+
+  background: var(--primary-color);
+}
+
+.footer-social ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-social ul li {
+  overflow: hidden;
+}
+
+.footer-social ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 6rem;
+  height: 6rem;
+
+  border: 0.3rem solid var(--primary-color);
+}
+
+.footer-social ul li a img {
+  transition: transform 500ms ease;
+}
+
+.footer-social ul li a:hover img {
+  transform: scale(1.2);
+}
+
+.copy .container p {
+  font-family: 'Rubik', sans-serif;
+}
+
+.copy .container p:last-child {
+  font-weight: bold;
+  text-align: right;
 }

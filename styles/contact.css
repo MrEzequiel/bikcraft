@@ -1,0 +1,64 @@
+#introduction-section {
+  background-image: url('../assets/contato-img.jpg');
+}
+
+#contact {
+  padding: 6rem 0;
+}
+
+#contact .contact-data {
+  padding-left: 4rem;
+}
+
+.contact-data h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.contact-data span {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-family: 'Bitter', serif;
+}
+
+.contact-data .social-title {
+  margin-top: 4rem;
+}
+
+.contact-data ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.contact-data ul li {
+  border: 0.4rem solid var(--primary-color);
+  padding: 1rem;
+  transition: border 400ms ease-in-out;
+}
+
+.contact-data ul li:hover {
+  border-color: #000;
+}
+
+.contact-data ul li a img {
+  transition: transform 350ms ease;
+}
+
+.contact-data ul li a:hover img {
+  transform: scale(1.3);
+}
+
+#map {
+  padding-bottom: 6rem;
+}
+
+#map iframe {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  border: 0.4rem solid var(--primary-color);
+}

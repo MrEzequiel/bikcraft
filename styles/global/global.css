@@ -419,3 +419,35 @@ img {
 #portfolio .call p {
   color: #fff;
 }
+
+#form_budget {
+  display: flex;
+  flex-direction: column;
+}
+
+#form_budget label {
+  font-family: 'Bitter', serif;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+#form_budget input,
+#form_budget textarea {
+  background: transparent;
+  border: 0.4rem solid var(--primary-color);
+  margin-bottom: 1.5rem;
+  height: 40px;
+
+  color: #fff;
+  font-size: 1.8rem;
+  font-family: 'Rubik', serif;
+  padding: 0 1rem;
+}
+
+#form_budget textarea {
+  resize: none;
+
+  height: 120px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}

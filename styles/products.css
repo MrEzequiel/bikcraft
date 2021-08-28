@@ -1,0 +1,184 @@
+#introduction-section {
+  background-image: url('../assets/produtos-img.jpg');
+}
+
+main .product-item {
+  margin-top: 6rem;
+}
+
+.product-item .grid-11 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.product-item h2 {
+  position: absolute;
+  color: #fff;
+  text-shadow: 0px 0px 4px black;
+
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 3.6rem;
+  line-height: 3rem;
+  letter-spacing: 0.1rem;
+}
+
+.product-item h2::after,
+.product-item h2::before {
+  content: '';
+  display: block;
+  background: #fff;
+  width: 6rem;
+  height: 0.3rem;
+}
+
+.product-item h2::after {
+  margin: 1rem auto 0;
+}
+.product-item h2::before {
+  margin: 0 auto 1rem;
+}
+
+.product-item .product-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  height: 280px;
+}
+
+.product-item div:nth-child(3),
+.product-item div:nth-child(4) {
+  margin-top: 2rem;
+}
+
+.product-item .product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 280px;
+  background: #000;
+}
+
+.product-info p {
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  padding: 3rem 3rem 0;
+}
+
+.product-info ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.product-info ul li {
+  background: var(--primary-color);
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  line-height: 2rem;
+
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid black;
+}
+
+#budget {
+  background: #000;
+  color: #fff;
+
+  margin-top: 6rem;
+  padding: 3rem 0;
+}
+
+#budget .subtitle {
+  color: var(--primary-color);
+}
+
+#budget .subtitle::after {
+  background-color: var(--primary-color);
+}
+
+#budget #form_budget,
+#budget .budget-data {
+  margin-top: 4rem;
+}
+
+#budget #form_budget {
+  display: flex;
+  flex-direction: column;
+}
+
+#form_budget label {
+  font-family: 'Bitter', serif;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+#form_budget input,
+#form_budget textarea {
+  background: transparent;
+  border: 0.4rem solid var(--primary-color);
+  margin-bottom: 1.5rem;
+  height: 40px;
+
+  color: #fff;
+  font-size: 1.8rem;
+  font-family: 'Rubik', serif;
+  padding: 0 1rem;
+}
+
+#form_budget textarea {
+  resize: none;
+
+  height: 120px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.budget-data {
+  padding-left: 8rem;
+}
+
+.budget-data h3 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary-color);
+
+  margin-bottom: 1rem;
+}
+
+.budget-data span {
+  display: block;
+}
+
+.budget-data .email-data {
+  margin-top: 1rem;
+}
+
+.budget-data .spec {
+  margin-top: 4rem;
+}
+
+.spec ul {
+  font-family: 'Bitter', serif;
+  margin-top: 1rem;
+}
+
+.spec ul li {
+  display: flex;
+  align-items: center;
+
+  height: 30px;
+  padding: 1rem;
+}
+
+.spec ul li:nth-child(odd) {
+  background: #1b1c1d;
+}

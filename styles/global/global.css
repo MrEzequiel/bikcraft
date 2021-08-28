@@ -86,6 +86,7 @@ img {
 }
 
 .button {
+  cursor: pointer;
   text-transform: uppercase;
   width: 14rem;
   height: 4rem;
@@ -96,8 +97,9 @@ img {
 
   font-size: 1.4rem;
   font-weight: bold;
-  color: var(--primary-color);
 
+  background: transparent;
+  color: var(--primary-color);
   border: 0.4rem solid var(--primary-color);
 
   transition: border 400ms, color 400ms, transform 600ms;

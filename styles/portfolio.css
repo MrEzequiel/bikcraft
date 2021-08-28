@@ -1,0 +1,49 @@
+#introduction-section {
+  background-image: url('../assets/portifolio.jpg');
+}
+
+main .quote-client {
+  width: 456px;
+  margin: 6rem auto;
+
+  text-align: center;
+}
+
+.quote-client p {
+  color: #3e3e3e;
+  font-style: italic;
+  font-size: 1.8rem;
+}
+
+.quote-client cite {
+  font-family: 'Bitter', serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.8rem;
+
+  display: block;
+  margin-top: 2rem;
+}
+
+#portfolio .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+
+  margin-top: 2rem;
+}
+
+.slide .ball {
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+
+  background: #3e3e3e;
+}
+
+.slide .ball.active {
+  cursor: default;
+  background: var(--primary-color);
+}

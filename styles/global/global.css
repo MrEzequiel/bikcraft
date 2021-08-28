@@ -380,3 +380,42 @@ img {
   margin: 0.6rem auto 1.5rem auto;
   background-color: #fff;
 }
+
+#portfolio {
+  width: 100%;
+  padding: 4rem 0 6rem;
+  background: #000;
+}
+
+#portfolio h2 {
+  color: var(--primary-color);
+}
+
+#portfolio h2::after {
+  background: var(--primary-color);
+  margin-bottom: 3rem;
+}
+
+#portfolio ul li:last-child {
+  margin-top: 2rem;
+}
+
+#portfolio ul li {
+  overflow: hidden;
+}
+
+#portfolio ul li img {
+  transition: all 300ms ease-in-out;
+}
+
+#portfolio ul li:hover img {
+  transform: scale(1.1);
+}
+
+#portfolio .call {
+  padding-top: 3rem;
+}
+
+#portfolio .call p {
+  color: #fff;
+}

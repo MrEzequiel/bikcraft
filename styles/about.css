@@ -1,0 +1,33 @@
+#mission {
+  padding-top: 6rem;
+}
+
+#mission h2 {
+  margin-bottom: 2rem;
+}
+
+#mission p {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  margin-bottom: 1.8rem;
+  padding-right: 4rem;
+}
+
+#mission ul li {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  font-family: 'Bitter', serif;
+  margin-bottom: 0.7rem;
+}
+
+#mission ul li:last-child {
+  margin: 0;
+}
+
+#mission p:last-child {
+  margin: 0;
+}
+
+#mission .image-team {
+  margin-top: 5rem;
+}

@@ -54,16 +54,14 @@
   padding: 2rem;
 }
 
-.text-list h3,
-.quality-list h3 {
+.text-list h3 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
   line-height: 2.5rem;
 }
-.text-list h3::after,
-.quality-list h3::after {
+.text-list h3::after {
   content: '';
   display: block;
   background: #000;
@@ -128,41 +126,4 @@
 
 #portfolio .call p {
   color: #fff;
-}
-
-#quality {
-  padding: 6rem 0;
-  position: relative;
-}
-
-#quality::after {
-  position: absolute;
-  top: 20rem;
-  right: 14rem;
-  content: '';
-  width: 67rem;
-  height: 8.3rem;
-  display: block;
-  background: url('../assets/linhas.svg') no-repeat center;
-}
-
-#quality img {
-  margin: 3rem auto 0;
-}
-
-.quality-list {
-  margin-top: 5rem;
-}
-
-.quality-list li {
-  text-align: center;
-  padding: 0 4rem;
-}
-
-.quality-list li p {
-  margin-top: 1rem;
-}
-
-#quality .call {
-  padding-top: 5rem;
 }

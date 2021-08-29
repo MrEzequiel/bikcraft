@@ -47,3 +47,23 @@ main .quote-client {
   cursor: default;
   background: var(--primary-color);
 }
+
+[data-slide-nav] {
+  display: block;
+  text-align: center;
+}
+
+[data-slide-nav] button {
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin: 2rem 1rem 0 0;
+  background: #3e3e3e;
+  color: #3e3e3e;
+}
+
+[data-slide-nav] button.active {
+  color: var(--primary-color);
+  background: var(--primary-color);
+}

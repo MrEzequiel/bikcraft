@@ -74,13 +74,19 @@
     <main>
       <section id="introduction-section">
         <div class="container">
-          <h1>CONTATO</h1>
-          <p>tire as suas duvidas com a gente</p>
+          <h1 data-anime="100" class="fade-in-down">CONTATO</h1>
+          <p data-anime="500" class="fade-in-down">
+            tire as suas duvidas com a gente
+          </p>
         </div>
       </section>
 
       <section id="contact" class="container">
-        <form id="form_budget" class="form grid-8">
+        <form
+          id="form_budget"
+          class="form grid-8 fade-in-down"
+          data-anime="900"
+        >
           <label for="name">Nome</label>
           <input type="text" id="name" />
 
@@ -96,7 +102,7 @@
           <button type="submit" class="button">Enviar</button>
         </form>
 
-        <div class="contact-data grid-8">
+        <div class="contact-data grid-8 fade-in-down" data-anime="900">
           <h3>Dados</h3>
           <span>+55 68 9999-9999</span>
           <span>orcamento@bikcraft.com</span>
@@ -197,6 +203,9 @@
         </div>
       </div>
     </footer>
+
+    <script src="./src/simple-anime.js"></script>
+    <script src="./src/simple-slide.js"></script>
     <script src="./src/main.js"></script>
   </body>
 </html>

@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./styles/global/reset.css" />
     <link rel="stylesheet" href="./styles/global/grid.css" />
     <link rel="stylesheet" href="./styles/portfolio.css" />
-    <link rel="stylesheet" href="./styles/global/responsive.css">
+    <link rel="stylesheet" href="./styles/global/responsive.css" />
     <title>Bikcraft - Portfólio</title>
   </head>
   <body>
@@ -74,49 +74,105 @@
     <main>
       <section id="introduction-section">
         <div class="container">
-          <h1>PORTFÓLIO</h1>
-          <p>conheça os projetos que amamos mostrar</p>
+          <h1 data-anime="100" class="fade-in-down">PORTFÓLIO</h1>
+          <p data-anime="500" class="fade-in-down">
+            conheça os projetos que amamos mostrar
+          </p>
         </div>
       </section>
 
-      <section class="container">
+      <section class="container" data-slide="quote">
         <blockquote class="quote-client">
-          <p>
+          <p data-anime="900" class="fade-in-down">
             “No mundo atual, a contínua expansão de nossa atividade cumpre um
             papel essencial na formulação da gestão inovadora da qual fazemos
             parte.”
           </p>
-          <cite>Barbara Moss</cite>
+          <cite data-anime="1300" class="fade-in-down">Barbara Moss</cite>
+        </blockquote>
+
+        <blockquote class="quote-client">
+          <p>
+            “Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque
+            minima nisi ullam suscipit corporis expedita, asperiores totam modi
+            nulla quisquam illo.”
+          </p>
+          <cite>Um cara qualquer</cite>
+        </blockquote>
+
+        <blockquote class="quote-client">
+          <p>“É preciso estudar muito para saber um pouco.”</p>
+          <cite>Barão de Montesquieu</cite>
         </blockquote>
       </section>
 
-      <section id="portfolio">
+      <section id="portfolio" data-anime="1600" class="fade-in-down">
         <div class="container">
-          <ul>
-            <li class="grid-8">
-              <img
-                src="./assets/portfolio-1.jpg"
-                alt="bikcraft bicicleta retrô"
-              />
-            </li>
-            <li class="grid-8">
-              <img
-                src="./assets/portfolio-2.jpg"
-                alt="bikcraft bicicleta passeio"
-              />
-            </li>
-            <li class="grid-16">
-              <img
-                src="./assets/portfolio-3.jpg"
-                alt="bikcraft bicicleta passeio"
-              />
-            </li>
-          </ul>
-          <div class="slide grid-16">
-            <div class="ball active"></div>
-            <div class="ball"></div>
-            <div class="ball"></div>
+          <div class="slide-images" data-slide="portfolio">
+            <ul>
+              <li class="grid-8">
+                <img
+                  src="./assets/portfolio-1.jpg"
+                  alt="bikcraft bicicleta retrô"
+                />
+              </li>
+              <li class="grid-8">
+                <img
+                  src="./assets/portfolio-2.jpg"
+                  alt="bikcraft bicicleta passeio"
+                />
+              </li>
+              <li class="grid-16">
+                <img
+                  src="./assets/portfolio-3.jpg"
+                  alt="bikcraft bicicleta passeio"
+                />
+              </li>
+            </ul>
+
+            <ul>
+              <li class="grid-8">
+                <img
+                  src="./assets/portfolio-2.jpg"
+                  alt="bikcraft bicicleta retrô"
+                />
+              </li>
+              <li class="grid-8">
+                <img
+                  src="./assets/portfolio-1.jpg"
+                  alt="bikcraft bicicleta passeio"
+                />
+              </li>
+              <li class="grid-16">
+                <img
+                  src="./assets/portfolio-3.jpg"
+                  alt="bikcraft bicicleta passeio"
+                />
+              </li>
+            </ul>
+
+            <ul>
+              <li class="grid-8">
+                <img
+                  src="./assets/portfolio-1.jpg"
+                  alt="bikcraft bicicleta retrô"
+                />
+              </li>
+              <li class="grid-8">
+                <img
+                  src="./assets/portfolio-2.jpg"
+                  alt="bikcraft bicicleta passeio"
+                />
+              </li>
+              <li class="grid-16">
+                <img
+                  src="./assets/portfolio-3.jpg"
+                  alt="bikcraft bicicleta passeio"
+                />
+              </li>
+            </ul>
           </div>
+        </div>
       </section>
 
       <section id="break-quote">
@@ -187,6 +243,9 @@
         </div>
       </div>
     </footer>
+
+    <script src="./src/simple-anime.js"></script>
+    <script src="./src/simple-slide.js"></script>
     <script src="./src/main.js"></script>
   </body>
 </html>

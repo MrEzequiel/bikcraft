@@ -11,6 +11,25 @@
   --secondary-color: #000;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  height: 0;
+  scrollbar-width: 5px;
+}
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+  background: black;
+}
+
 body {
   scroll-behavior: smooth;
   font: 400 1.6rem 'Rubik', sans-serif;
@@ -481,4 +500,33 @@ img {
   height: 120px;
   padding: 1rem;
   margin-bottom: 2rem;
+}
+
+[data-slide] {
+  position: relative;
+}
+[data-slide] > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+[data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+  z-index: 1;
+}
+
+[data-anime] {
+  opacity: 0;
+}
+
+.fade-in-down {
+  transform: translate3d(0, -20px, 0);
+}
+
+.anime {
+  opacity: 1;
+  transform: none;
+  transition: opacity 800ms ease-in-out, transform 800ms ease-in-out;
 }

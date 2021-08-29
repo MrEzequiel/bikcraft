@@ -74,19 +74,24 @@
     <main>
       <section id="introduction">
         <div class="container">
-          <h1>BICICLETAS FEITAS A MÃO</h1>
-          <blockquote class="quote">
+          <h1 data-anime="100" class="fade-in-down">BICICLETAS FEITAS A MÃO</h1>
+          <blockquote data-anime="500" class="quote fade-in-down">
             <p>
               “Não tenha nada em sua casa que você não considere útil ou
               acredita ser bonito”
             </p>
             <cite>WILLIAM MORRIS</cite>
           </blockquote>
-          <a href="products.html" class="button other-button">Orçamento</a>
+          <a
+            href="products.html"
+            data-anime="900"
+            class="button other-button fade-in-down"
+            >Orçamento</a
+          >
         </div>
       </section>
 
-      <section id="products" class="container">
+      <section id="products" class="container fade-in-down" data-anime="1300">
         <h2 class="subtitle">PRODUTOS</h2>
         <ul class="products-list">
           <li class="grid-1-3">
@@ -264,6 +269,8 @@
         </div>
       </div>
     </footer>
+    <script src="./src/simple-anime.js"></script>
+    <script src="./src/simple-slide.js"></script>
     <script src="./src/main.js"></script>
   </body>
 </html>

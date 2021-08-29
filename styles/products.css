@@ -6,11 +6,20 @@ main .product-item {
   margin-top: 6rem;
 }
 
-.product-item .grid-11 {
+.product-item .grid-11,
+.product-item .grid-8 {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  height: 280px;
+}
+
+.product-item .grid-11 img,
+.product-item .grid-8 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .product-item h2 {
@@ -71,6 +80,8 @@ main .product-item {
 
 .product-info ul {
   display: grid;
+  height: 30%;
+  width: 100%;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -80,12 +91,17 @@ main .product-item {
   font-size: 1.8rem;
   line-height: 2rem;
 
-  height: 50px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  border: 1px solid black;
+  border: 1px solid white;
+}
+
+.product-info ul li:nth-child(1),
+.product-info ul li:nth-child(2) {
+  border-top: none;
 }
 
 #budget {

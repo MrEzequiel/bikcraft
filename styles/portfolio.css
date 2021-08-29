@@ -3,7 +3,7 @@
 }
 
 main .quote-client {
-  width: 456px;
+  max-width: 456px;
   margin: 6rem auto;
 
   text-align: center;

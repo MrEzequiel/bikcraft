@@ -21,6 +21,7 @@ p {
 }
 
 img {
+  max-width: 100%;
   display: block;
 }
 
@@ -61,12 +62,16 @@ img {
 }
 
 .navigation ul li a:hover,
-.navigation ul li a.active {
+.navigation ul li a.active,
+.menu-list li a:hover,
+.menu-list li a.active {
   color: #fff;
 }
 
 .navigation ul li a::before,
-.navigation ul li a.active::before {
+.navigation ul li a.active::before,
+.menu-list li a::before,
+.menu-list li a.active::before {
   content: '';
   background: #000;
   bottom: -0.75rem;
@@ -77,12 +82,38 @@ img {
   transition: width 400ms;
 }
 
-.navigation ul li a.active::before {
+.navigation ul li a.active::before,
+.menu-list li a.active::before {
   width: 100%;
 }
 
-.navigation ul li a:hover::before {
+.navigation ul li a:hover::before,
+.menu-list li a:hover::before {
   width: 100%;
+}
+
+.menu {
+  display: none;
+}
+.menu span {
+  user-select: none;
+  cursor: pointer;
+  font-size: 5rem;
+}
+.menu .menu-list {
+  display: none;
+}
+
+.menu-list .close {
+  position: relative;
+  width: max-content;
+  top: -20rem;
+  left: 15rem;
+}
+.menu-list li a {
+  position: relative;
+  font-weight: bold;
+  transition: color 300ms;
 }
 
 .button {

@@ -6,6 +6,11 @@
   padding: 6rem 0;
 }
 
+#form_budget input,
+#form_budget textarea {
+  color: #000;
+}
+
 #contact .contact-data {
   padding-left: 4rem;
 }
